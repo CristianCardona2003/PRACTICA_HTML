@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Inicio</title>
+    <style>
+
+        .content-details h1 {
+            animation-name: anim;
+            animation-duration: 3s;
+            letter-spacing: 2px;
+        }
+
+        @keyframes anim {
+            0% {
+                letter-spacing: 10px;
+            }
+            100% {
+                letter-spacing: 2px;
+            }
+        }
+
+        .content-details a {
+            background: rgba(0, 0, 0, .7);
+            border-radius: 10px;
+            color: #fff;
+            padding: 10px;
+            text-decoration: none;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="content">
+        <div class="content-details">
+            <h1 id="titulo">Hola mundo!</h1><br>
+            <p>Lorem, ipsum dolor sit amet consectetur 
+                adipisicing elit. Delectus sint adipisci 
+                eligendi voluptatum consequuntur 
+                laboriosam ad, odio, culpa recusandae 
+                debitis autem soluta suscipit quam magni 
+                similique ipsum ex possimus labore.</p><br>
+            <a href="contact.html">Ir a contacto</a><br><br>
+            <img src="img/gif_index.gif" alt="">
+        </div>
+    </div>
+
+
+    <script>
+
+        nombre = prompt("Ingrese su nombre");
+
+        document.getElementById('titulo').innerHTML = "Bienvenido " + nombre + "!";
+
+    </script>
+</body>
+</html>
