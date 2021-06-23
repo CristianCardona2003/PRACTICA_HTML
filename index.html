@@ -33,6 +33,23 @@
             text-decoration: none;
         }
 
+        .content-details img {
+            opacity: 1;
+        }
+
+        button {
+            background: transparent;
+            border: none;
+            border-radius: 10px;
+            border-bottom: 2px #fff solid;
+            color: #fff;
+            cursor: pointer;
+            font-weight: bold;
+            letter-spacing: 1px;
+            margin: 10px;
+            padding: 9px;
+        }
+
     </style>
 </head>
 <body>
@@ -46,7 +63,9 @@
                 debitis autem soluta suscipit quam magni 
                 similique ipsum ex possimus labore.</p><br>
             <a href="contact.html">Ir a contacto</a><br><br>
-            <img src="img/gif_index.gif" alt="">
+            <button onclick="Mostrar();">Quieres verme? Presiona</button>
+            <button onclick="Ocultar();">No quieres verme? Presiona</button><br><br>
+            <img src="img/gif_index.gif" alt="" id="img">
         </div>
     </div>
 
@@ -56,6 +75,14 @@
         nombre = prompt("Ingrese su nombre");
 
         document.getElementById('titulo').innerHTML = "Bienvenido " + nombre + "!";
+
+        function Mostrar(){
+            document.getElementById('img').style.opacity = "1";
+        }
+
+        function Ocultar(){
+            document.getElementById('img').style.opacity = "0";
+        }
 
     </script>
 </body>
